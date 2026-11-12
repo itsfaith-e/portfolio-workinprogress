@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 | The Dog Ate It</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body { padding: 0; display:grid; place-items:center; min-height:100vh; }
+    .error-box { width:min(760px,calc(100% - 42px)); border:4px solid var(--champagne); box-shadow:8px 8px 0 var(--espresso); padding:42px; text-align:center; background:var(--black); }
+    .dog { display:inline-grid; grid-template-columns:repeat(8,12px); grid-auto-rows:12px; margin:0 auto 28px; }
+    .dog span { width:12px; height:12px; }
+    .w { background:var(--cream); }
+    .b { background:var(--black); }
+    .error-box h1 { font-size:clamp(1.4rem,4vw,2.7rem); margin-bottom:24px; }
+    .error-box p { font-size:1.35rem; }
+  </style>
+</head>
+<body data-home="index.html#home">
+  <div class="side-rail rail-left" aria-hidden="true"></div>
+  <div class="side-rail rail-right" aria-hidden="true"></div>
+  <main class="error-box">
+    <div class="dog" aria-hidden="true">
+      <span></span><span></span><span class="w"></span><span class="w"></span><span class="w"></span><span></span><span></span><span></span>
+      <span></span><span class="w"></span><span class="w"></span><span class="b"></span><span class="w"></span><span class="w"></span><span></span><span></span>
+      <span class="w"></span><span class="w"></span><span class="w"></span><span class="w"></span><span class="w"></span><span class="w"></span><span class="w"></span><span></span>
+      <span class="w"></span><span class="w"></span><span class="w"></span><span class="w"></span><span class="w"></span><span class="w"></span><span class="w"></span><span class="w"></span>
+      <span></span><span class="w"></span><span class="w"></span><span class="w"></span><span class="w"></span><span class="w"></span><span></span><span class="w"></span>
+      <span></span><span class="w"></span><span></span><span class="w"></span><span></span><span class="w"></span><span></span><span></span>
+    </div>
+    <p class="pixel-kicker">ERROR 404</p>
+    <h1>THE ANNOYING DOG ABSORBED THIS PAGE.</h1>
+    <p>* There is nothing here now.</p>
+    <a class="pixel-button primary" href="index.html" data-confirm>RETURN TO THE UNDERGROUND</a>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

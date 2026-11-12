@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Faith's story-driven Undertale-inspired portfolio for technology and modeling work.">
+  <title>Faith | Welcome to the Underground</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-home="#home">
+  <div class="world-curtain" aria-hidden="true"></div>
+  <div class="side-rail rail-left" aria-hidden="true"></div>
+  <div class="side-rail rail-right" aria-hidden="true"></div>
+
+  <header class="hud">
+    <div class="hud-inner">
+      <div class="hud-left">
+        <a class="hud-brand" href="#home">FAITH</a>
+        <button class="rooms rooms-button" type="button" data-open-rooms aria-label="View rooms explored and missing checkpoints">ROOMS EXPLORED <strong id="rooms-count">0</strong>/6</button>
+      </div>
+      <div class="hud-right">
+        <button class="hud-btn" id="sound-btn" type="button" aria-pressed="true">SOUND: ON</button>
+        <button class="hud-btn" type="button" data-open-controls>CONTROLS</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="saved-toast" id="saved-toast" role="status" aria-live="polite">FILE SAVED.</div>
+
+  <main class="site-main">
+    <section class="hero" id="home" data-room="underground">
+      <div class="hero-copy">
+        <p class="pixel-kicker hero-kicker">YOU'VE FALLEN DOWN MT. EBOTT</p>
+        <h1 class="hero-title" aria-label="Welcome to the Underground">
+          <span>WELCOME</span>
+          <span>TO THE</span>
+          <span>UNDERGROUND</span>
+        </h1>
+        <p class="determination">* You feel the power of <strong>Faith's determination.</strong></p>
+        <div class="hero-actions">
+          <a class="pixel-button" href="#story" data-confirm>BEGIN STORY</a>
+          <a class="pixel-button work-cta" href="#paths" data-confirm>SEE MY WORK</a>
+          <button class="pixel-button continue" id="continue-btn" type="button">CONTINUE SAVE</button>
+        </div>
+        <div class="falling-soul" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-visual" aria-label="Opening image area" data-parallax="0.028">
+        <div class="lantern-hang" aria-hidden="true">
+          <span class="lantern-chain"></span>
+          <span class="lantern-pixel" data-lantern></span>
+          <span class="lantern-glint lg1"></span>
+          <span class="lantern-glint lg2"></span>
+          <span class="lantern-glint lg3"></span>
+        </div>
+        <figure class="storybook-art hero-storybook" data-img="assets/opening.jpg">
+          <div class="storybook-placeholder">
+            <span>ADD YOUR OPENING IMAGE</span>
+            <small>portrait • editorial • original Underground illustration</small>
+          </div>
+          <figcaption>* A stranger has fallen into a story still being written.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="story-thread" id="story" aria-label="Story path">
+      <div class="thread-line" aria-hidden="true"></div>
+      <div class="story-lights" aria-hidden="true"></div>
+
+      <section class="story-beat story-left reveal-left lyric-beat beat-opening with-art" style="--art-drop: 190px;">
+        <span class="story-star" aria-hidden="true"></span>
+        <div class="story-copy">
+          <span class="chapter-label">ONCE UPON A TIME</span>
+          <p class="rhyme">Every good rhyme starts with “Once Upon A Time”</p>
+          <p class="rhyme stanza-gap">Long Ago<br>Far Away<br>Centuries before your day</p>
+        </div>
+        <figure class="floating-story-image image-right reveal-right storybook-art" data-img="assets/story-1.jpg" data-parallax="0.055">
+          <div class="storybook-placeholder">OPTIONAL STORY IMAGE</div>
+          <figcaption>* An illustration can drift into the story like a page tucked between verses.</figcaption>
+        </figure>
+      </section>
+
+      <section class="about-open reveal-up" id="about" data-room="about">
+        <div class="about-heading">
+          <span class="section-label">CHECK / WHO FELL DOWN?</span>
+          <h2>FAITH</h2>
+        </div>
+        <div class="about-soul-wrap" aria-hidden="true">
+          <span class="about-soul"></span>
+          <span class="about-glint ag1"></span>
+          <span class="about-glint ag2"></span>
+          <span class="about-glint ag3"></span>
+        </div>
+        <div class="about-copy">
+          <p class="check-line">* CHECK<br>FAITH &nbsp; ATK 01 &nbsp; DEF 01</p>
+          <p>* An Information Technology student who also works in modeling, runway, and visual storytelling.</p>
+          <p>* Equally comfortable debugging a project or walking into a fitting.</p>
+          <p>* Currently carrying a suspicious number of side quests.</p>
+        </div>
+      </section>
+
+      <section class="story-beat story-right reveal-right lyric-beat">
+        <span class="story-star" aria-hidden="true"></span>
+        <div class="story-copy">
+          <span class="chapter-label">HUMANS + MONSTERS</span>
+          <p class="rhyme">Humans lived,<br>Monsters roamed<br>Both shared earth and sky as home</p>
+          <p class="rhyme stanza-gap">Yet this peace<br>Came undone<br>War was waged and humans won</p>
+        </div>
+      </section>
+
+      <section class="story-beat story-left reveal-left lyric-beat">
+        <span class="story-star" aria-hidden="true"></span>
+        <div class="story-copy">
+          <span class="chapter-label">FORCED BELOW</span>
+          <p class="rhyme">Forced below,<br>Monsters fell<br>Humans trapped them with a spell</p>
+          <p class="rhyme stanza-gap">Listen, children, to my words:<br>Ebott will eat you,<br>Beware the curse!</p>
+        </div>
+      </section>
+
+      <section class="save-station reveal-up" data-save-page="index.html" data-save-target="about" data-save-room="about">
+        <button class="save-button" type="button" aria-label="Save progress after About">
+          <span class="magic-ring r1"></span><span class="magic-ring r2"></span>
+          <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span><span class="spark s4"></span><span class="spark s5"></span><span class="spark s6"></span>
+          <span class="save-star" aria-hidden="true"></span>
+        </button>
+        <p class="save-copy"><strong>SAVE POINT</strong><span>* The story feels warmer here. Your progress can be saved.</span></p>
+      </section>
+
+      <section class="story-beat story-right reveal-right lyric-beat beat-warning with-art" style="--art-drop: 285px;">
+        <span class="story-star" aria-hidden="true"></span>
+        <div class="story-copy">
+          <span class="chapter-label">THE WARNING</span>
+          <p class="rhyme">Monster teeth go clack, clack, clack<br>If you climb the mountain<br>You won't come back!</p>
+          <p class="rhyme stanza-gap">Human child,<br>Human child,<br>won't turn around</p>
+          <p class="rhyme stanza-gap">Human child,<br>Human child-<br>Oops, they fell down!</p>
+        </div>
+        <figure class="floating-story-image image-left reveal-left storybook-art" data-img="assets/story-2.jpg" data-parallax="0.07">
+          <div class="storybook-placeholder">OPTIONAL STORY IMAGE</div>
+          <figcaption>* A story image can hang opposite the verse without interrupting it.</figcaption>
+        </figure>
+      </section>
+
+      <section class="story-beat story-left reveal-left lyric-beat">
+        <span class="story-star" aria-hidden="true"></span>
+        <div class="story-copy">
+          <span class="chapter-label">LOOK OUT BELOW</span>
+          <p class="rhyme">Human child,<br>Human child,<br>Look out below!</p>
+          <p class="rhyme stanza-gap">Down underground where the monsters go.</p>
+        </div>
+      </section>
+
+      <section class="story-beat story-left reveal-left lyric-beat beat-heart with-art" style="--art-drop: 235px;">
+        <span class="story-star" aria-hidden="true"></span>
+        <div class="story-copy">
+          <span class="chapter-label">THE HEART</span>
+          <p class="rhyme">Oops dropped your heart<br>Be careful in the dark<br>Someone might take it, break it apart</p>
+        </div>
+        <figure class="floating-story-image image-right reveal-right storybook-art" data-img="assets/story-3.jpg" data-parallax="0.06">
+          <div class="storybook-placeholder">OPTIONAL IMAGE / COLLAGE</div>
+          <figcaption>* Another illustration can trail the verse on the opposite side of the path.</figcaption>
+        </figure>
+      </section>
+
+      <section class="paths-box reveal-up" id="paths" data-room="paths">
+        <div class="paths-head">
+          <span class="section-label">CHOOSE YOUR PATH</span>
+          <h2>TWO ROADS OPEN AHEAD</h2>
+          <p>Neither one is a side quest. Pick the version of Faith you came here to meet.</p>
+        </div>
+        <div class="paths-grid">
+          <a class="path-card" href="technology.html" data-desc="Information Technology: product thinking, coding projects, technical experience, design systems, and the work behind the screen.">
+            <div class="path-visual" data-img="assets/path-technology.jpg"><span class="path-placeholder">ADD TECHNOLOGY IMAGE</span></div>
+            <div class="path-copy">
+              <span class="small-label">PATH 01</span>
+              <h3>INFORMATION TECHNOLOGY</h3>
+              <p>Projects, product work, technical experience, design, and systems.</p>
+            </div>
+          </a>
+          <a class="path-card" href="modeling.html" data-desc="Modeling: runway, photoshoots, editorial work, pageantry, performance, and the visual portfolio behind the work.">
+            <div class="path-visual" data-img="assets/path-modeling.jpg"><span class="path-placeholder">ADD MODELING IMAGE</span></div>
+            <div class="path-copy">
+              <span class="small-label">PATH 02</span>
+              <h3>MODELING + RUNWAY</h3>
+              <p>Runway, photoshoots, editorial work, pageantry, and performance.</p>
+            </div>
+          </a>
+        </div>
+        <div class="path-info" id="path-info" aria-live="polite">Hover over a path to inspect it.</div>
+      </section>
+
+      <section class="save-station reveal-up" data-save-page="index.html" data-save-target="paths" data-save-room="paths">
+        <button class="save-button" type="button" aria-label="Save progress at the career paths">
+          <span class="magic-ring r1"></span><span class="magic-ring r2"></span>
+          <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span><span class="spark s4"></span><span class="spark s5"></span><span class="spark s6"></span>
+          <span class="save-star" aria-hidden="true"></span>
+        </button>
+        <p class="save-copy"><strong>SAVE POINT</strong><span>* Two paths remain open. Neither disappears when you choose the other.</span></p>
+      </section>
+
+      <section class="story-beat story-left reveal-left lyric-beat choice-fragment">
+        <span class="story-star" aria-hidden="true"></span>
+        <div class="story-copy">
+          <span class="chapter-label">A CHOICE</span>
+          <p class="rhyme">Trouble on the left<br>Trouble on the right<br>Will you spare them, run, or fight?</p>
+        </div>
+      </section>
+
+      <section class="story-beat story-right reveal-right lyric-beat choice-fragment">
+        <span class="story-star" aria-hidden="true"></span>
+        <div class="story-copy">
+          <p class="rhyme">Oops dropped your heart<br>Be careful in the dark<br>Someone might take it, break it apart</p>
+        </div>
+      </section>
+
+      <section class="story-beat story-left reveal-left lyric-beat choice-fragment">
+        <span class="story-star" aria-hidden="true"></span>
+        <div class="story-copy">
+          <p class="rhyme">Trouble on the left<br>Trouble on the right</p>
+        </div>
+      </section>
+
+      <section class="story-beat story-right reveal-right lyric-beat choice-fragment final-choice-fragment">
+        <span class="story-star" aria-hidden="true"></span>
+        <div class="story-copy">
+          <p class="rhyme">Will you spare them, run, or fight?</p>
+        </div>
+      </section>
+
+      <section class="barrier reveal-up" id="contact" data-room="barrier">
+        <span class="section-label">THE BARRIER / CONTACT</span>
+        <h2>THE BARRIER</h2>
+        <div class="barrier-grid">
+          <div>
+            <p>* Conveniently, the barrier has email.</p>
+            <p>* Whether you came here for technology, product work, modeling, runway, or something in between, Faith would love to hear from you.</p>
+            <p class="barrier-whisper">* Your journey isn't over yet.</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:faithled03@gmail.com" data-confirm>EMAIL</a>
+            <a href="https://www.linkedin.com/in/faithledwards/" target="_blank" rel="noopener" data-confirm>LINKEDIN</a>
+            <a href="https://github.com/itsfaith-e" target="_blank" rel="noopener" data-confirm>GITHUB</a>
+            <a href="resume.pdf" target="_blank" rel="noopener" data-confirm>RESUME</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="save-station final-save reveal-up" data-save-page="index.html" data-save-target="contact" data-save-room="barrier">
+        <button class="save-button" type="button" aria-label="Save progress at the Barrier">
+          <span class="magic-ring r1"></span><span class="magic-ring r2"></span>
+          <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span><span class="spark s4"></span><span class="spark s5"></span><span class="spark s6"></span>
+          <span class="save-star" aria-hidden="true"></span>
+        </button>
+        <p class="save-copy"><strong>FINAL SAVE</strong><span>* The barrier hums. Your journey through the portfolio has been recorded.</span></p>
+      </section>
+
+    </div>
+
+    <section class="credits-gateway reveal-up" aria-labelledby="credits-gateway-title">
+      <p class="credits-gateway-copy" id="credits-gateway-title">* A golden door glimmers beyond the Barrier.</p>
+      <a class="golden-door-link" href="credits.html" data-confirm aria-label="Open the credits room">
+        <span class="door-twinkle dt1"></span><span class="door-twinkle dt2"></span><span class="door-twinkle dt3"></span><span class="door-twinkle dt4"></span>
+        <img src="assets/golden-door.png" alt="Golden warp door">
+      </a>
+      <a class="pixel-button credits-button" href="credits.html" data-confirm>VIEW CREDITS</a>
+    </section>
+  </main>
+
+  <div class="battle-dock" aria-label="Persistent portfolio navigation">
+    <div class="battle-info"><strong>WHERE TO?</strong><span class="battle-info-text" id="menu-info-text">Hover over a path to inspect it.</span></div>
+    <nav class="battle-menu">
+      <a class="menu-button" href="#about" data-desc="CHECK. Meet Faith before choosing which side of the portfolio you want to explore."><span class="soul"></span><span>ABOUT</span></a>
+      <a class="menu-button" href="#paths" data-desc="CHOOSE YOUR PATH. Information Technology and Modeling lead to separate portfolio pages."><span class="soul"></span><span>PATHS</span></a>
+      <button class="menu-button" type="button" data-open-inventory data-desc="INVENTORY. Inspect the tools, languages, and skills Faith carries without leaving the current room."><span class="soul"></span><span>INVENTORY</span></button>
+      <a class="menu-button" href="#contact" data-desc="THE BARRIER. Email, LinkedIn, GitHub, resume, and the way back out."><span class="soul"></span><span>CONTACT</span></a>
+    </nav>
+  </div>
+
+  <div class="modal-backdrop" id="inventory-modal" aria-hidden="true">
+    <section class="inventory-modal" role="dialog" aria-modal="true" aria-labelledby="inventory-title">
+      <div class="modal-head">
+        <h2 id="inventory-title">INVENTORY</h2>
+        <button class="modal-close" type="button" data-close-modal>CLOSE [X]</button>
+      </div>
+      <div class="inventory-grid">
+        <div class="slots">
+          <button class="slot" type="button" data-name="PRODUCT + UX" data-desc="Product thinking, user-centered decisions, flows, research, and figuring out what should be built before building it.">PRODUCT + UX</button>
+          <button class="slot" type="button" data-name="FRONT-END" data-desc="HTML, CSS, JavaScript, responsive interfaces, and the small interactions that make a product feel alive.">FRONT-END</button>
+          <button class="slot" type="button" data-name="PYTHON" data-desc="Scripts, automation, data work, and technical experiments.">PYTHON</button>
+          <button class="slot" type="button" data-name="JAVA" data-desc="Object-oriented programming, data structures, and coursework projects.">JAVA</button>
+          <button class="slot" type="button" data-name="SQL" data-desc="Relational data, database structure, and querying information cleanly.">SQL</button>
+          <button class="slot" type="button" data-name="GIT + GITHUB" data-desc="Version control, repositories, deployment, and the trail of commits behind the work.">GIT + GITHUB</button>
+          <button class="slot" type="button" data-name="DESIGN" data-desc="Visual systems, branding, UI decisions, and making technical work feel intentional.">DESIGN</button>
+          <button class="slot" type="button" data-name="MODELING" data-desc="Runway, editorial work, camera awareness, presentation, and working with creative teams.">MODELING</button>
+        </div>
+        <div class="item-box" aria-live="polite">
+          <span class="label">* CHECK ITEM</span>
+          <h3 id="item-name">SELECT AN ITEM</h3>
+          <p id="item-desc">Hover, focus, or select an item to inspect it.</p>
+        </div>
+      </div>
+      <p class="controls-note">Arrow keys / WASD: move &nbsp; Z or Enter: select &nbsp; X or Esc: close &nbsp; C: finish typed text</p>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="controls-modal" aria-hidden="true">
+    <section class="controls-modal" role="dialog" aria-modal="true" aria-labelledby="controls-title">
+      <div class="modal-head">
+        <h2 id="controls-title">CONTROLS</h2>
+        <button class="modal-close" type="button" data-close-modal>CLOSE [X]</button>
+      </div>
+      <div class="controls-grid">
+        <div class="control-row"><b>↑ ↓ ← → / WASD</b> move through menu choices</div>
+        <div class="control-row"><b>Z / ENTER</b> select</div>
+        <div class="control-row"><b>X / ESC</b> cancel / return to start</div>
+        <div class="control-row"><b>C</b> finish current text animation</div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="tiny-credit">* Built by Faith with HTML, CSS, JavaScript, and determination. <a href="404.html">Test the error screen.</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>

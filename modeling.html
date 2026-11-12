@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Faith's modeling, runway, and editorial portfolio path.">
+  <title>Faith | Modeling + Runway Path</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-home="index.html#home" class="modeling-page">
+  <div class="world-curtain" aria-hidden="true"></div>
+  <div class="side-rail rail-left" aria-hidden="true"></div>
+  <div class="side-rail rail-right" aria-hidden="true"></div>
+
+  <header class="hud">
+    <div class="hud-inner">
+      <div class="hud-left">
+        <a class="hud-brand" href="index.html#home">FAITH</a>
+        <button class="rooms rooms-button" type="button" data-open-rooms aria-label="View rooms explored and missing checkpoints">ROOMS EXPLORED <strong id="rooms-count">0</strong>/6</button>
+      </div>
+      <div class="hud-right">
+        <button class="hud-btn" id="sound-btn" type="button" aria-pressed="true">SOUND: ON</button>
+        <button class="hud-btn" type="button" data-open-controls>CONTROLS</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="saved-toast" id="saved-toast" role="status" aria-live="polite">FILE SAVED.</div>
+
+  <main class="site-main route-main" data-room="modeling">
+    <div class="route-lights" aria-hidden="true"></div>
+    <section class="route-hero" id="top">
+      <div class="route-hero-copy reveal-left">
+        <p class="pixel-kicker">PATH 02 / MODELING + RUNWAY</p>
+        <h1>THE STAGE</h1>
+        <p>* The light changes down this corridor.</p>
+        <p>* This route holds runway work, photoshoots, editorial images, pageantry, performance, and visual storytelling.</p>
+        <div class="hero-actions" style="justify-content:flex-start">
+          <a class="pixel-button primary" href="#runway" data-confirm>ENTER STAGE</a>
+          <a class="pixel-button" href="index.html#paths" data-confirm>CHOOSE OTHER PATH</a>
+        </div>
+      </div>
+      <div class="route-hero-art reveal-right" data-parallax="0.03">
+        <div class="route-lantern" aria-hidden="true"><span class="lantern-chain"></span><span class="lantern-pixel" data-lantern></span></div>
+        <figure class="storybook-art route-cover modeling-cover" data-img="assets/modeling-cover.jpg">
+          <div class="storybook-placeholder">ADD A MODELING COVER IMAGE<br><br>editorial portrait • runway image • campaign image</div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="route-section" id="runway">
+      <div class="route-intro reveal-up">
+        <span class="section-label">RUNWAY LOG</span>
+        <h2>WALKED ROOMS</h2>
+        <p>Runway credits can breathe here with the designer, show, date, city, and one strong image from each appearance.</p>
+      </div>
+
+      <article class="project-row reveal-left">
+        <div class="project-media storybook-art tilt-a" data-img="assets/runway-1.jpg" data-parallax="0.045"><div class="storybook-placeholder">ADD RUNWAY PHOTO</div></div>
+        <div class="project-copy">
+          <span class="small-label">RUNWAY</span>
+          <h3>SHOW / DESIGNER ONE</h3>
+          <p>Add the real credit, date, location, and any context worth knowing.</p>
+        </div>
+      </article>
+
+      <article class="project-row reverse reveal-right">
+        <div class="project-media storybook-art tilt-b" data-img="assets/runway-2.jpg" data-parallax="0.04"><div class="storybook-placeholder">ADD RUNWAY PHOTO</div></div>
+        <div class="project-copy">
+          <span class="small-label">RUNWAY</span>
+          <h3>SHOW / DESIGNER TWO</h3>
+          <p>Add another runway appearance with enough image space to actually matter.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="route-section" id="gallery">
+      <div class="route-intro reveal-up">
+        <span class="section-label">EDITORIAL / PHOTOSHOOTS</span>
+        <h2>SELECTED LOOKS</h2>
+        <p>This is deliberately image-first. Modeling employers should be able to see the work before they read an essay about it.</p>
+      </div>
+      <div class="model-collage collage-three" aria-label="Selected editorial trio">
+        <figure class="model-piece piece-one storybook-art reveal-left" data-img="assets/editorial-1.jpg" data-parallax="0.04"><div class="storybook-placeholder">EDITORIAL PHOTO 01</div><figcaption>Editorial / selected look</figcaption></figure>
+        <figure class="model-piece piece-two storybook-art reveal-right" data-img="assets/editorial-2.jpg" data-parallax="0.07"><div class="storybook-placeholder">EDITORIAL PHOTO 02</div><figcaption>Runway / selected look</figcaption></figure>
+        <figure class="model-piece piece-three storybook-art reveal-up" data-img="assets/editorial-3.jpg" data-parallax="0.03"><div class="storybook-placeholder">EDITORIAL PHOTO 03</div><figcaption>Portrait / selected look</figcaption></figure>
+      </div>
+
+      <div class="gallery-break reveal-up">
+        <span class="section-label">EDITORIAL + PHOTOSHOOTS</span>
+        <h3>TWO MORE FRAMES FROM THE STORY</h3>
+      </div>
+
+      <div class="model-collage collage-two" aria-label="Selected editorial pair">
+        <figure class="model-piece piece-four storybook-art reveal-left" data-img="assets/editorial-4.jpg" data-parallax="0.06"><div class="storybook-placeholder">EDITORIAL PHOTO 04</div><figcaption>Campaign / selected look</figcaption></figure>
+        <figure class="model-piece piece-five storybook-art reveal-right" data-img="assets/editorial-5.jpg" data-parallax="0.05"><div class="storybook-placeholder">EDITORIAL PHOTO 05</div><figcaption>Beauty / selected look</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="route-section" id="stage-work">
+      <div class="route-intro reveal-up">
+        <span class="section-label">STAGE + CREATIVE EXPERIENCE</span>
+        <h2>BEYOND THE RUNWAY</h2>
+        <p>Pageantry, performance, campaigns, and creative collaborations can live here as a simple timeline instead of competing with the photos.</p>
+      </div>
+      <div class="route-timeline">
+        <article class="reveal-left"><span class="date">PAGEANT / DATE</span><div><h3>PAGEANTRY</h3><p>Add pageant experience, title, location, or creative responsibilities that strengthen the modeling story.</p></div></article>
+        <article class="reveal-right"><span class="date">PERFORMANCE / DATE</span><div><h3>PERFORMANCE</h3><p>Add singing, stage work, hosting, or other live performance experience.</p></div></article>
+        <article class="reveal-left"><span class="date">SHOOT / DATE</span><div><h3>EDITORIAL / CAMPAIGN</h3><p>Add selected shoots, publications, campaigns, photographers, or creative teams.</p></div></article>
+      </div>
+    </section>
+
+    <section class="save-station reveal-up" id="modeling-save" data-save-page="modeling.html" data-save-target="modeling-save" data-save-room="modeling">
+      <button class="save-button" type="button" aria-label="Save progress on the Modeling route">
+        <span class="magic-ring r1"></span><span class="magic-ring r2"></span>
+        <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span><span class="spark s4"></span><span class="spark s5"></span><span class="spark s6"></span>
+        <span class="save-star" aria-hidden="true"></span>
+      </button>
+      <p class="save-copy"><strong>SAVE POINT</strong><span>* The last flash fades. You can save here.</span></p>
+    </section>
+
+    <section class="model-summary route-section reveal-up" id="details" aria-labelledby="model-summary-title">
+      <div class="model-summary-column recent-experience">
+        <span class="section-label">RUNWAY LOG / LATEST</span>
+        <h2 id="model-summary-title">MOST RECENT EXPERIENCE</h2>
+        <div class="recent-credit">
+          <h3>UCF FASHION SOCIETY</h3>
+          <p>Spring Fashion Show</p>
+          <span>April 2026</span>
+        </div>
+        <div class="recent-credit">
+          <h3>ORLANDO FASHION WEEK</h3>
+          <p>Runway appearance</p>
+          <span>March 2026</span>
+        </div>
+      </div>
+      <div class="model-summary-column model-details">
+        <span class="section-label">MODEL DETAILS</span>
+        <h2>DETAILS</h2>
+        <dl class="model-detail-list">
+          <dt>Based in</dt><dd>Orlando, FL</dd>
+          <dt>Height</dt><dd>[ add ]</dd>
+          <dt>Sizes</dt><dd>[ add ]</dd>
+          <dt>Hair / eyes</dt><dd>[ add ]</dd>
+          <dt>Representation</dt><dd>[ add ]</dd>
+        </dl>
+        <a class="pixel-button model-book" href="mailto:faithled03@gmail.com?subject=Modeling%20booking%20inquiry" data-confirm>BOOK FAITH</a>
+      </div>
+    </section>
+
+    <section class="warp-gateway reveal-up" aria-label="Return to the Underground">
+      <p>* A shortcut opens behind the stage.</p>
+      <a class="warp-door-link" href="index.html#paths" data-confirm aria-label="Take the warp door back to the Underground">
+        <img src="assets/warp-door.png" alt="Purple warp door">
+      </a>
+      <span class="warp-caption">RETURN TO THE UNDERGROUND</span>
+    </section>
+  </main>
+
+  <div class="battle-dock" aria-label="Modeling path navigation">
+    <div class="battle-info"><strong>WHERE TO?</strong><span class="battle-info-text" id="menu-info-text">Hover over a path to inspect it.</span></div>
+    <nav class="battle-menu">
+      <a class="menu-button" href="index.html#paths" data-desc="UNDERGROUND. Return to the fork and choose between Modeling and Information Technology."><span class="soul"></span><span>HOME</span></a>
+      <a class="menu-button" href="#runway" data-desc="RUNWAY LOG. See shows, designers, stage work, and credits on this route."><span class="soul"></span><span>RUNWAY</span></a>
+      <button class="menu-button" type="button" data-open-inventory data-desc="INVENTORY. Inspect modeling and performance skills without leaving the gallery."><span class="soul"></span><span>INVENTORY</span></button>
+      <a class="menu-button" href="index.html#contact" data-desc="THE BARRIER. Head to contact information when you're ready to book or talk."><span class="soul"></span><span>CONTACT</span></a>
+    </nav>
+  </div>
+
+  <div class="modal-backdrop" id="inventory-modal" aria-hidden="true">
+    <section class="inventory-modal" role="dialog" aria-modal="true" aria-labelledby="inventory-title">
+      <div class="modal-head"><h2 id="inventory-title">INVENTORY</h2><button class="modal-close" type="button" data-close-modal>CLOSE [X]</button></div>
+      <div class="inventory-grid">
+        <div class="slots">
+          <button class="slot" type="button" data-name="RUNWAY" data-desc="Walking, pacing, turns, garment awareness, and adapting to a show's direction.">RUNWAY</button>
+          <button class="slot" type="button" data-name="EDITORIAL" data-desc="Using pose, expression, shape, and movement to support a visual concept.">EDITORIAL</button>
+          <button class="slot" type="button" data-name="CAMERA" data-desc="Awareness of angles, framing, light, and how small changes read through a lens.">CAMERA</button>
+          <button class="slot" type="button" data-name="STAGE" data-desc="Presence, performance, composure, and working live in front of an audience.">STAGE</button>
+          <button class="slot" type="button" data-name="PAGEANTRY" data-desc="Presentation, interview experience, advocacy, styling, and live-event discipline.">PAGEANTRY</button>
+          <button class="slot" type="button" data-name="COLLABORATION" data-desc="Working with photographers, designers, stylists, makeup artists, directors, and production teams.">COLLABORATION</button>
+          <button class="slot" type="button" data-name="WARDROBE" data-desc="Respecting garment direction, fittings, quick changes, and the details that make the look work.">WARDROBE</button>
+          <button class="slot" type="button" data-name="STORYTELLING" data-desc="Treating a look as part of a larger visual story instead of just standing in the frame.">STORYTELLING</button>
+        </div>
+        <div class="item-box" aria-live="polite"><span class="label">* CHECK ITEM</span><h3 id="item-name">SELECT AN ITEM</h3><p id="item-desc">Hover, focus, or select an item to inspect it.</p></div>
+      </div>
+      <p class="controls-note">Arrow keys / WASD: move &nbsp; Z or Enter: select &nbsp; X or Esc: close &nbsp; C: finish typed text</p>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="controls-modal" aria-hidden="true">
+    <section class="controls-modal" role="dialog" aria-modal="true" aria-labelledby="controls-title">
+      <div class="modal-head"><h2 id="controls-title">CONTROLS</h2><button class="modal-close" type="button" data-close-modal>CLOSE [X]</button></div>
+      <div class="controls-grid">
+        <div class="control-row"><b>↑ ↓ ← → / WASD</b> move through menu choices</div>
+        <div class="control-row"><b>Z / ENTER</b> select</div>
+        <div class="control-row"><b>X / ESC</b> cancel / return to the main Underground</div>
+        <div class="control-row"><b>C</b> finish current text animation</div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="tiny-credit">* Modeling + Runway route.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Credits and acknowledgements for Faith's portfolio.">
+  <title>Faith | Credits</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-home="index.html#home">
+  <div class="world-curtain" aria-hidden="true"></div>
+  <div class="side-rail rail-left" aria-hidden="true"></div>
+  <div class="side-rail rail-right" aria-hidden="true"></div>
+
+  <header class="hud">
+    <div class="hud-inner">
+      <div class="hud-left">
+        <a class="hud-brand" href="index.html#home">FAITH</a>
+        <button class="rooms rooms-button" type="button" data-open-rooms aria-label="View rooms explored and missing checkpoints">ROOMS EXPLORED <strong id="rooms-count">0</strong>/6</button>
+      </div>
+      <div class="hud-right">
+        <button class="hud-btn" id="sound-btn" type="button" aria-pressed="true">SOUND: ON</button>
+        <button class="hud-btn" type="button" data-open-controls>CONTROLS</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main route-main credits-main">
+    <div class="route-lights" aria-hidden="true"></div>
+
+    <header class="credits-hero reveal-up">
+      <span class="pixel-kicker">ACKNOWLEDGEMENTS</span>
+      <h1>CREDITS</h1>
+      <p>* Every story has people behind the scenes. This page is reserved for the writers, photographers, designers, artists, and collaborators whose work appears throughout the Underground.</p>
+    </header>
+
+    <div class="credit-groups">
+      <section class="credit-group reveal-left">
+        <h2>STORY + WRITING</h2>
+        <ul>
+          <li><span class="credit-placeholder">Nursery rhyme creator, title, and source link to be added.</span></li>
+          <li>Portfolio copy and adaptations: Faith.</li>
+        </ul>
+      </section>
+
+      <section class="credit-group reveal-right">
+        <h2>PHOTOGRAPHY</h2>
+        <ul>
+          <li><span class="credit-placeholder">Photographer credits will be listed by image / shoot here.</span></li>
+          <li><span class="credit-placeholder">Editorial, runway, pageant, and campaign credits to be added.</span></li>
+        </ul>
+      </section>
+
+      <section class="credit-group reveal-left">
+        <h2>MODELING + RUNWAY</h2>
+        <ul>
+          <li><span class="credit-placeholder">Designers, shows, creative directors, stylists, HMU, and production credits to be added.</span></li>
+        </ul>
+      </section>
+
+      <section class="credit-group reveal-right">
+        <h2>ART + SITE ASSETS</h2>
+        <ul>
+          <li>Original portfolio concept, design direction, and future custom artwork: Faith.</li>
+          <li><span class="credit-placeholder">Any third-party visual assets or references used in the final site will be listed here.</span></li>
+        </ul>
+      </section>
+
+      <section class="credit-group reveal-left">
+        <h2>TYPE + CODE</h2>
+        <ul>
+          <li>Site built with HTML, CSS, and JavaScript.</li>
+          <li><span class="credit-placeholder">Font licensing / attribution and any final code acknowledgements can be added here.</span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <div class="battle-dock" aria-label="Credits navigation">
+    <div class="battle-info"><strong>WHERE TO?</strong><span class="battle-info-text" id="menu-info-text">Hover over a path to inspect it.</span></div>
+    <nav class="battle-menu">
+      <a class="menu-button" href="index.html#home" data-desc="UNDERGROUND. Return to the beginning of the portfolio story."><span class="soul"></span><span>HOME</span></a>
+      <a class="menu-button" href="technology.html" data-desc="INFORMATION TECHNOLOGY. Projects, product work, technical experience, and systems."><span class="soul"></span><span>TECH</span></a>
+      <a class="menu-button" href="modeling.html" data-desc="MODELING + RUNWAY. Editorials, runway, pageantry, and visual work."><span class="soul"></span><span>MODELING</span></a>
+      <a class="menu-button" href="index.html#contact" data-desc="THE BARRIER. Return to contact information and the end of the main route."><span class="soul"></span><span>CONTACT</span></a>
+    </nav>
+  </div>
+
+  <div class="modal-backdrop" id="controls-modal" aria-hidden="true">
+    <section class="controls-modal" role="dialog" aria-modal="true" aria-labelledby="controls-title">
+      <div class="modal-head"><h2 id="controls-title">CONTROLS</h2><button class="modal-close" type="button" data-close-modal>CLOSE [X]</button></div>
+      <div class="controls-grid">
+        <div class="control-row"><b>↑ ↓ ← → / WASD</b> move through menu choices</div>
+        <div class="control-row"><b>Z / ENTER</b> select</div>
+        <div class="control-row"><b>X / ESC</b> cancel / return to the main Underground</div>
+        <div class="control-row"><b>C</b> finish current text animation</div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="tiny-credit">* Credits are still being filled in. <a href="index.html#home">Return to the Underground.</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>

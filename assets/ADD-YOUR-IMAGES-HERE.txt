@@ -1,0 +1,35 @@
+V7 IMAGE SLOTS
+
+Put your image files in this /assets folder using these filenames and the site will load them automatically.
+
+HOME / STORY
+- opening.jpg           Hero / opening artwork or portrait
+- story-1.jpg           Floating story illustration near the opening rhyme
+- story-2.jpg           Floating story illustration near the warning / fall
+- story-3.jpg           Floating story illustration near the heart verse
+- path-technology.jpg   Choose Your Path: Information Technology
+- path-modeling.jpg     Choose Your Path: Modeling + Runway
+
+INFORMATION TECHNOLOGY
+- technology-cover.jpg  IT route cover image
+- project-1.jpg         Featured project / case study 1
+- project-2.jpg         Featured project / case study 2
+- project-3.jpg         Featured project / case study 3
+
+MODELING + RUNWAY
+- modeling-cover.jpg    Modeling route cover image
+- runway-1.jpg          Runway image 1
+- runway-2.jpg          Runway image 2
+- editorial-1.jpg       Editorial grouping 1, image 1
+- editorial-2.jpg       Editorial grouping 1, image 2
+- editorial-3.jpg       Editorial grouping 1, image 3
+- editorial-4.jpg       Editorial grouping 2, image 1
+- editorial-5.jpg       Editorial grouping 2, image 2
+
+CREDITS
+- credits.html is now included as a separate page. The actual names/links are placeholders until you provide final credits.
+
+V10 BUILT-IN ASSETS
+- warp-door.png — route shortcut back to the Underground
+- golden-door.png — credits-room entrance after the final SAVE
+- ../resume.pdf — Faith's attached resume, linked from the Barrier and IT route

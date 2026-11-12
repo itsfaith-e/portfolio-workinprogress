@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Faith's Information Technology portfolio path.">
+  <title>Faith | Information Technology Path</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-home="index.html#home" class="technology-page">
+  <div class="world-curtain" aria-hidden="true"></div>
+  <div class="side-rail rail-left" aria-hidden="true"></div>
+  <div class="side-rail rail-right" aria-hidden="true"></div>
+
+  <header class="hud">
+    <div class="hud-inner">
+      <div class="hud-left">
+        <a class="hud-brand" href="index.html#home">FAITH</a>
+        <button class="rooms rooms-button" type="button" data-open-rooms aria-label="View rooms explored and missing checkpoints">ROOMS EXPLORED <strong id="rooms-count">0</strong>/6</button>
+      </div>
+      <div class="hud-right">
+        <button class="hud-btn" id="sound-btn" type="button" aria-pressed="true">SOUND: ON</button>
+        <button class="hud-btn" type="button" data-open-controls>CONTROLS</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="saved-toast" id="saved-toast" role="status" aria-live="polite">FILE SAVED.</div>
+
+  <main class="site-main route-main" data-room="technology">
+    <div class="route-lights" aria-hidden="true"></div>
+    <section class="route-hero" id="top">
+      <div class="route-hero-copy reveal-left">
+        <p class="pixel-kicker">PATH 01 / INFORMATION TECHNOLOGY</p>
+        <h1>THE WORKSHOP</h1>
+        <p>* Screens glow somewhere deeper underground.</p>
+        <p>* This route holds technical projects, product decisions, design work, and the systems behind them.</p>
+        <div class="hero-actions" style="justify-content:flex-start">
+          <a class="pixel-button primary" href="#work" data-confirm>ENTER WORKSHOP</a>
+          <a class="pixel-button" href="index.html#paths" data-confirm>CHOOSE OTHER PATH</a>
+        </div>
+      </div>
+      <div class="route-hero-art reveal-right" data-parallax="0.035">
+        <div class="route-lantern" aria-hidden="true"><span class="lantern-chain"></span><span class="lantern-pixel" data-lantern></span></div>
+        <figure class="storybook-art route-cover" data-img="assets/technology-cover.jpg">
+          <div class="storybook-placeholder">ADD A TECHNOLOGY COVER IMAGE<br><br>project collage • workspace • product mockup • original illustration</div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="route-section" id="work">
+      <div class="route-intro reveal-up">
+        <span class="section-label">PROJECT LOG</span>
+        <h2>THINGS FAITH HAS BUILT</h2>
+        <p>Each project gets enough room to breathe. Image first, then the problem, your role, and what changed because you worked on it.</p>
+      </div>
+
+      <article class="project-row reveal-left">
+        <div class="project-media storybook-art tilt-a" data-img="assets/wearmini.jpg" data-parallax="0.045"><div class="storybook-placeholder">ADD WEARMINI VISUAL / MOCKUP</div></div>
+        <div class="project-copy">
+          <span class="small-label">PRODUCT + DESIGN</span>
+          <h3>WEARMINI</h3>
+          <p>Add the real problem, your role, the product decisions, and what the team built here.</p>
+          <a href="#" data-confirm style="color:var(--gilded)">* Inspect project</a>
+        </div>
+      </article>
+
+      <article class="project-row reverse reveal-right">
+        <div class="project-media storybook-art tilt-b" data-img="assets/project-2.jpg" data-parallax="0.04"><div class="storybook-placeholder">ADD PROJECT VISUAL</div></div>
+        <div class="project-copy">
+          <span class="small-label">DEVELOPMENT</span>
+          <h3>PROJECT TWO</h3>
+          <p>A technical build, app, database project, automation, or experiment can live here without becoming a tiny card.</p>
+        </div>
+      </article>
+
+      <article class="project-row reveal-left">
+        <div class="project-media storybook-art tilt-a" data-img="assets/project-3.jpg" data-parallax="0.05"><div class="storybook-placeholder">ADD CASE STUDY VISUAL</div></div>
+        <div class="project-copy">
+          <span class="small-label">CASE STUDY</span>
+          <h3>PROJECT THREE</h3>
+          <p>Use this for another strong project with a problem, process, and result worth explaining.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="route-section" id="experience">
+      <div class="route-intro reveal-up">
+        <span class="section-label">EXPERIENCE LOG</span>
+        <h2>THE PEOPLE-SIDE OF TECH</h2>
+        <p>Jobs, leadership, technical writing, product collaboration, and campus work can sit here in one readable trail instead of another wall of boxes.</p>
+      </div>
+      <div class="route-timeline">
+        <article class="reveal-left"><span class="date">ROLE / DATE</span><div><h3>TECH OR PRODUCT EXPERIENCE</h3><p>Add the real organization, what you owned, and one concrete result.</p></div></article>
+        <article class="reveal-right"><span class="date">ROLE / DATE</span><div><h3>LEADERSHIP / CAMPUS EXPERIENCE</h3><p>Add work that proves communication, coordination, stakeholder management, or leadership.</p></div></article>
+        <article class="reveal-left"><span class="date">ROLE / DATE</span><div><h3>TECHNICAL WRITING / RESEARCH / LAB</h3><p>Add work that shows you can translate technical information for people.</p></div></article>
+      </div>
+    </section>
+
+    <section class="save-station reveal-up" data-save-page="technology.html" data-save-target="experience" data-save-room="technology">
+      <button class="save-button" type="button" aria-label="Save progress in the Workshop">
+        <span class="magic-ring r1"></span><span class="magic-ring r2"></span>
+        <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span><span class="spark s4"></span><span class="spark s5"></span><span class="spark s6"></span>
+        <span class="save-star" aria-hidden="true"></span>
+      </button>
+      <p class="save-copy"><strong>SAVE POINT</strong><span>* The workshop is quiet for a moment.</span></p>
+    </section>
+
+    <section class="resume-actions reveal-up" aria-label="Resume and inventory">
+      <p>Every tool I carry is in the inventory. The full paper trail is in my resume.</p>
+      <div class="resume-action-buttons">
+        <button class="pixel-button" type="button" data-open-inventory>OPEN INVENTORY</button>
+        <a class="pixel-button resume-primary" href="resume.pdf" target="_blank" rel="noopener" data-confirm>VIEW RESUME</a>
+      </div>
+    </section>
+
+    <section class="warp-gateway reveal-up" aria-label="Return to the Underground">
+      <p>* A shortcut hums at the edge of the workshop.</p>
+      <a class="warp-door-link" href="index.html#paths" data-confirm aria-label="Take the warp door back to the Underground">
+        <img src="assets/warp-door.png" alt="Purple warp door">
+      </a>
+      <span class="warp-caption">RETURN TO THE UNDERGROUND</span>
+    </section>
+  </main>
+
+  <div class="battle-dock" aria-label="Technology path navigation">
+    <div class="battle-info"><strong>WHERE TO?</strong><span class="battle-info-text" id="menu-info-text">Hover over a path to inspect it.</span></div>
+    <nav class="battle-menu">
+      <a class="menu-button" href="index.html#paths" data-desc="UNDERGROUND. Return to the fork and choose between Information Technology and Modeling."><span class="soul"></span><span>HOME</span></a>
+      <a class="menu-button" href="#work" data-desc="PROJECT LOG. Explore product, design, development, and technical work in this route."><span class="soul"></span><span>WORK</span></a>
+      <button class="menu-button" type="button" data-open-inventory data-desc="INVENTORY. Inspect tools and skills without leaving the current room."><span class="soul"></span><span>INVENTORY</span></button>
+      <a class="menu-button" href="index.html#contact" data-desc="THE BARRIER. Head to contact information when you're ready to talk."><span class="soul"></span><span>CONTACT</span></a>
+    </nav>
+  </div>
+
+  <div class="modal-backdrop" id="inventory-modal" aria-hidden="true">
+    <section class="inventory-modal" role="dialog" aria-modal="true" aria-labelledby="inventory-title">
+      <div class="modal-head"><h2 id="inventory-title">INVENTORY</h2><button class="modal-close" type="button" data-close-modal>CLOSE [X]</button></div>
+      <div class="inventory-grid">
+        <div class="slots">
+          <button class="slot" type="button" data-name="PRODUCT + UX" data-desc="Product thinking, user-centered decisions, flows, research, and deciding what should be built.">PRODUCT + UX</button>
+          <button class="slot" type="button" data-name="FRONT-END" data-desc="HTML, CSS, JavaScript, responsive interfaces, and interaction design.">FRONT-END</button>
+          <button class="slot" type="button" data-name="PYTHON" data-desc="Scripts, automation, data work, and technical experiments.">PYTHON</button>
+          <button class="slot" type="button" data-name="JAVA" data-desc="Object-oriented programming, data structures, and coursework projects.">JAVA</button>
+          <button class="slot" type="button" data-name="SQL" data-desc="Relational data, database structure, and querying information cleanly.">SQL</button>
+          <button class="slot" type="button" data-name="GIT + GITHUB" data-desc="Version control, repositories, deployment, and collaborative code history.">GIT + GITHUB</button>
+          <button class="slot" type="button" data-name="DESIGN" data-desc="Visual systems, branding, UI decisions, and presentation.">DESIGN</button>
+          <button class="slot" type="button" data-name="STORYTELLING" data-desc="Turning technical information into something a user, teammate, or stakeholder can actually follow.">STORYTELLING</button>
+        </div>
+        <div class="item-box" aria-live="polite"><span class="label">* CHECK ITEM</span><h3 id="item-name">SELECT AN ITEM</h3><p id="item-desc">Hover, focus, or select an item to inspect it.</p></div>
+      </div>
+      <p class="controls-note">Arrow keys / WASD: move &nbsp; Z or Enter: select &nbsp; X or Esc: close &nbsp; C: finish typed text</p>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="controls-modal" aria-hidden="true">
+    <section class="controls-modal" role="dialog" aria-modal="true" aria-labelledby="controls-title">
+      <div class="modal-head"><h2 id="controls-title">CONTROLS</h2><button class="modal-close" type="button" data-close-modal>CLOSE [X]</button></div>
+      <div class="controls-grid">
+        <div class="control-row"><b>↑ ↓ ← → / WASD</b> move through menu choices</div>
+        <div class="control-row"><b>Z / ENTER</b> select</div>
+        <div class="control-row"><b>X / ESC</b> cancel / return to the main Underground</div>
+        <div class="control-row"><b>C</b> finish current text animation</div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="tiny-credit">* Information Technology route.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
